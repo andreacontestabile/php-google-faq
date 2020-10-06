@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 1000px;
+  width: 980px;
   margin: 0 auto;
 }
 
@@ -71,4 +71,18 @@ header nav.main-nav ul.main-nav-list .main-nav-list-item a {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 600;
+}
+
+main {
+  padding: 80px 0;
+}
+main h2 {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+main p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.7;
 }
