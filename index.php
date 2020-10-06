@@ -34,19 +34,39 @@ $faqs = [
   <head>
     <meta charset="utf-8">
     <title>Google FAQ</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/app.css">
   </head>
   <body>
-    <h1>Domande Frequenti</h1>
-    <ul>
-      <?php foreach ($faqs as $question) { ?>
-        <li>
-          <ul>
-            <li><h2><?php echo $question["Q"]; ?></h2></li>
-            <li><?php echo $question["A"]; ?></li>
-          </ul>
-        </li>
-      <?php } ?>
-    </ul>
+      <header>
+      <div class="heading">
+        <img src="img/logo.png" alt="Google">
+        <h1>Privacy e termini</h1>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-list-item"><a href="#">Introduzione</a></li>
+          <li class="main-nav-list-item"><a href="#">Norme sulla privacy</a></li>
+          <li class="main-nav-list-item"><a href="#">Termini di servizio</a></li>
+          <li class="main-nav-list-item"><a href="#">Tecnologie</a></li>
+          <li class="main-nav-list-item active"><a href="#">Domande frequenti</a></li>
+        </ul>
+      </nav>
+      </header>
+      <main>
+
+      </main>
+      <div class="container">
+      <ul>
+        <?php foreach ($faqs as $question) { ?>
+          <li>
+            <ul>
+              <li><h2><?php echo $question["Q"]; ?></h2></li>
+              <li><?php echo $question["A"]; ?></li>
+            </ul>
+          </li>
+        <?php } ?>
+      </ul>
+    </div>
   </body>
 </html>

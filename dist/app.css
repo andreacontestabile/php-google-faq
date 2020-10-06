@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #5f6368;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #3c4043;
+}
+
+header {
+  height: 100px;
+  padding: 10px 20px 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+}
+header .heading {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+header .heading img {
+  align-self: center;
+}
+header .heading h1 {
+  margin-left: 10px;
+}
+header nav.main-nav {
+  height: 40px;
+}
+header nav.main-nav ul.main-nav-list {
+  display: flex;
+  line-height: 30px;
+  font-size: 0;
+}
+header nav.main-nav ul.main-nav-list .main-nav-list-item:not(:last-child) {
+  margin-right: 35px;
+}
+header nav.main-nav ul.main-nav-list .main-nav-list-item.active {
+  border-bottom: 4px solid #3367D6;
+}
+header nav.main-nav ul.main-nav-list .main-nav-list-item.active a {
+  color: #3367D6;
+  font-weight: 700;
+}
+header nav.main-nav ul.main-nav-list .main-nav-list-item a {
+  color: #5f6368;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}

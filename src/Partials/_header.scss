@@ -1,0 +1,53 @@
+header {
+  height: 100px;
+  padding: 10px 20px 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+
+  .heading {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+
+    img {
+      align-self: center;
+    }
+    h1 {
+      margin-left: 10px;
+    }
+  }
+
+  nav.main-nav {
+    height: 40px;
+
+    ul.main-nav-list {
+      display: flex;
+      line-height: 30px;
+      font-size: 0;
+
+      .main-nav-list-item {
+
+        &:not(:last-child) {
+          margin-right: 35px;
+        }
+
+        &.active {
+          border-bottom: 4px solid $googleBlue;
+
+          a {
+            color: $googleBlue;
+            font-weight: 700;
+          }
+        }
+
+        a {
+          color: $textColor;
+          font-family: "Open Sans", sans-serif;
+          font-size: 15px;
+          font-weight: 600;
+
+        }
+      }
+    }
+  }
+
+}
